@@ -1,9 +1,9 @@
 {
-  "name": "react-typescript-boilerplate",
-  "version": "1.0.0",
-  "description": "TypeScript based React.js application boilerplate",
+  "name": "mes-souvenirs",
+  "version": "0.0.1-alpha.0",
+  "description": "Mes souvenirs",
   "main": "build/index.js",
-  "repository": "git@github.com:vitalydiachenko/react-typescript-boilerplate.git",
+  "repository": "git@github.com:vitalydiachenko/mes-souvenirs.git",
   "author": "Vitalii Diachenko <v.di4chenko@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -18,8 +18,10 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@types/history": "^4.7.8",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "@types/react-router": "^5.1.13",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "autoprefixer": "^10.2.5",
@@ -50,7 +52,16 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "@capacitor/cli": "^2.4.7",
+    "@capacitor/core": "^2.4.7",
+    "@capacitor/ios": "^2.4.7",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "history": "^4.10.1",
+    "mobx": "^6.1.8",
+    "mobx-react-lite": "^3.2.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0"
   }
 }
