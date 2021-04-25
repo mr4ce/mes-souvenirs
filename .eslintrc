@@ -16,7 +16,8 @@
   ],
   "rules": {
     "@typescript-eslint/no-use-before-define": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "import/no-cycle": "off"
   },
   "parserOptions": {
     "project": "./tsconfig.json"
