@@ -4,7 +4,10 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 import Header from '../Header';
 
 const useStyles = makeStyles((theme: Theme) => ({
-  offset: theme.mixins.toolbar,
+  offset: {
+    ...theme.mixins.toolbar,
+    minHeight: `calc(${theme.mixins.toolbar.minHeight}px + var(--cap-safe-area-top))`,
+  },
 }));
 
 interface ILayoutProps {

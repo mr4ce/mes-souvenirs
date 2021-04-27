@@ -1,5 +1,5 @@
 {
-  "appId": "com.vdiachenko.souvenirs",
+  "appId": "com.messouvenirs.app",
   "appName": "Mes Souvenirs",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
@@ -8,6 +8,10 @@
     "SplashScreen": {
       "launchShowDuration": 0
     }
+  },
+  "server": {
+    "url": "http://192.168.0.207:3000",
+    "cleartext": true
   },
   "cordova": {}
 }

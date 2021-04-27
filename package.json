@@ -19,9 +19,11 @@
   },
   "devDependencies": {
     "@types/history": "^4.7.8",
+    "@types/joi": "^17.2.3",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "@types/react-router": "^5.1.13",
+    "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "autoprefixer": "^10.2.5",
@@ -55,15 +57,20 @@
     "@capacitor/cli": "^2.4.7",
     "@capacitor/core": "^2.4.7",
     "@capacitor/ios": "^2.4.7",
+    "@hookform/resolvers": "^2.4.0",
     "@ionic/pwa-elements": "^3.0.2",
     "@material-ui/core": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "capacitor-data-storage-sqlite": "^2.4.7",
+    "dotenv-webpack": "^7.0.2",
     "history": "^4.10.1",
+    "joi": "^17.4.0",
     "mobx": "^6.1.8",
     "mobx-react-lite": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router": "^5.2.0"
+    "react-hook-form": "^7.3.3",
+    "react-router": "^5.2.0",
+    "uuid": "^8.3.2"
   }
 }

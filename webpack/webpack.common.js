@@ -1,3 +1,4 @@
+const DotEnvWebpack = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -77,6 +78,7 @@ module.exports = {
     publicPath: '/',
   },
   plugins: [
+    new DotEnvWebpack(),
     new HtmlWebpackPlugin({ template: 'public/index.html' })
   ],
   resolve: {

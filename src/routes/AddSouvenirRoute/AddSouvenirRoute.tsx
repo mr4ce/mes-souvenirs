@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Typography from '@material-ui/core/Typography';
-import AddSouvenir from '../../components/AddSouvenir/AddSouvenir';
+import AddSouvenir from '../../components/SaveSouvenir/SaveSouvenir';
 
 const AddSouvenirRoute: React.FC = () => {
   return (
     <div>
-      <Typography variant="h2">Add Souvenir</Typography>
+      <Typography variant="h3">Add Souvenir</Typography>
       <AddSouvenir />
     </div>
   );

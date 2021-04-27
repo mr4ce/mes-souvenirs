@@ -4,9 +4,18 @@ import Icon from '@material-ui/core/Icon';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 import Menu from '../Menu';
 
+const useStyles = makeStyles(() => ({
+  appBar: {
+    paddingTop: `var(--cap-safe-area-top)`,
+  },
+}));
+
 const Header: React.FC = () => {
+  const styles = useStyles();
+
   const [isMenuOpen, setIsMenuOpen] = React.useState<boolean>(false);
 
   const handleMenuClick = React.useCallback(() => {
@@ -19,7 +28,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <AppBar position="fixed">
+      <AppBar className={styles.appBar} position="fixed">
         <Toolbar>
           <IconButton aria-label="menu" edge="start" onClick={handleMenuClick}>
             <Icon>menu</Icon>
