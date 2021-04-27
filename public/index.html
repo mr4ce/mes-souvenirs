@@ -22,7 +22,15 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, viewport-fit=cover" />
+  <style>
+      html {
+          --cap-safe-area-top: env(safe-area-inset-top);
+          --cap-safe-area-bottom: env(safe-area-inset-bottom);
+          --cap-safe-area-left: env(safe-area-inset-left);
+          --cap-safe-area-right: env(safe-area-inset-right);
+      }
+  </style>
 </head>
 <body>
 <div id="root"></div>

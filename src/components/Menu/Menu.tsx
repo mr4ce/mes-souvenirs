@@ -19,6 +19,7 @@ const MENU_ITEMS: IMenuItem[] = [
 
 const useStyles = makeStyles({
   list: {
+    paddingTop: `var(--cap-safe-area-top)`,
     width: 250,
   },
 });
@@ -43,9 +44,11 @@ const Menu: React.FC<IMenuProps> = (props: React.PropsWithChildren<IMenuProps>) 
 
   const handleLinkItemClick = React.useCallback(
     (route: string) => () => {
+      handleClose();
+
       history.push(route);
     },
-    [history.push],
+    [handleClose, history.push],
   );
 
   const listItems = React.useMemo<JSX.Element[]>(

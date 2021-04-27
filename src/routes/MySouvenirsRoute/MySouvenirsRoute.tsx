@@ -1,10 +1,12 @@
 import * as React from 'react';
 import Typography from '@material-ui/core/Typography';
+import MySouvenirs from '../../components/MySouvenirs';
 
 const MySouvenirsRoute: React.FC = () => {
   return (
     <div>
-      <Typography variant="h2">My Souvenirs</Typography>
+      <Typography variant="h3">My Souvenirs</Typography>
+      <MySouvenirs />
     </div>
   );
 };
